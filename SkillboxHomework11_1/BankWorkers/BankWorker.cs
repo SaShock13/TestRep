@@ -14,7 +14,7 @@ namespace SkillboxHomework10_1
 {
     internal abstract class BankWorker : INotifyPropertyChanged
     {
-
+        
         protected string filePath = "_jsonFile.json"; // Путь к файлу Json
         protected AccessType accessType;
         

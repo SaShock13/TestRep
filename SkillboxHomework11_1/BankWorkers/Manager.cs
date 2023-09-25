@@ -10,11 +10,14 @@ namespace SkillboxHomework10_1
 {
     internal class Manager :BankWorker,IEditClientData
     {
+        //public event Action<string> AddClientEvent;
         public Manager()
         {
             accessType = AccessType.Менеджер;
-        }
+            
 
+    }
+        
         /// <summary>
         /// Редактирование данных клиента
         /// </summary>
@@ -95,6 +98,8 @@ namespace SkillboxHomework10_1
         {
 
             Clients.Add(client);
+            //AddClientEvent.Invoke("Добавлен клиент!");
+
         }
 
         public void AddAccount(Client client, string type, int amount)

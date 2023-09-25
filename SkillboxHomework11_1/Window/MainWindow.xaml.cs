@@ -70,10 +70,15 @@ namespace SkillboxHomework10_1
 
             cbDeps.ItemsSource = departmentList;
             cbDeps.SelectedIndex = 0;
-            
+
+            //(bankWorker as Manager). AddClientEvent += ShowMessage;
             dgSourceUpdate();
         }
 
+        public void ShowMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
 
         private void FillDepartmentList(int count)
         {

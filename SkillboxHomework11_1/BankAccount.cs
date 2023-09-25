@@ -54,7 +54,9 @@ namespace SkillboxHomework10_1
 
         public void IncreaseAccount(int amount)
         {
+
            this.MoneyAmount += amount;
+
             //MessageBox.Show("Увеличено");
         }
         public void DecreaseAccount(int amount)
